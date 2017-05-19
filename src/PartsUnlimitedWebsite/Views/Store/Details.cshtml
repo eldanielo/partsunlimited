@@ -26,6 +26,8 @@
 
                 <div class="zoom" id="product-image">
                         @Html.Image(@Model.ProductArtUrl)
+                    <img style="position:absolute;height:75px;width:75px; bottom:0px; " src="/images/sgs-certified.png" />
+
                     </div>
 
                 </div>
@@ -33,6 +35,7 @@
             <div class="col-md-8">
                     <div>
                         <h5>@Model.Price.ToString("C")</h5>
+
                     </div>
                     <div>
                             @if (@Model.Inventory > 0)
