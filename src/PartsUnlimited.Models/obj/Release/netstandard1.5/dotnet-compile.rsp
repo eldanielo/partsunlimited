@@ -1,5 +1,5 @@
---temp-output:C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\obj\Release\netstandard1.5\
---out:C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\bin\Release\netstandard1.5\PartsUnlimited.Models.dll
+--temp-output:C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\obj\Release\netstandard1.5\
+--out:C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\bin\Release\netstandard1.5\PartsUnlimited.Models.dll
 --define:RELEASE
 --define:TRACE
 --define:NETSTANDARD1_5
@@ -140,19 +140,19 @@
 --reference:C:\Users\dapfe\.nuget\packages\System.Threading.Thread\4.0.0\ref\netstandard1.3\System.Threading.Thread.dll
 --reference:C:\Users\dapfe\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\dapfe\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\ApplicationUser.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\CartItem.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Category.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\IPartsUnlimitedContext.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Manufacturer.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Order.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\OrderDetail.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\PartsUnlimitedContext.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Product.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Raincheck.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\ShoppingCart.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Startup.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Store.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Migrations\20151222030342_InitialMigration.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Migrations\20151222030342_InitialMigration.Designer.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\Migrations\PartsUnlimitedContextModelSnapshot.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\ApplicationUser.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\CartItem.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Category.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\IPartsUnlimitedContext.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Manufacturer.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Order.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\OrderDetail.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\PartsUnlimitedContext.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Product.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Raincheck.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\ShoppingCart.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Startup.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Store.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Migrations\20151222030342_InitialMigration.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Migrations\20151222030342_InitialMigration.Designer.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\Migrations\PartsUnlimitedContextModelSnapshot.cs

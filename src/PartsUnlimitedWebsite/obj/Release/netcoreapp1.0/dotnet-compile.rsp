@@ -1,5 +1,5 @@
---temp-output:C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\obj\Release\netcoreapp1.0\
---out:C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\bin\Release\netcoreapp1.0\PartsUnlimitedWebsite.dll
+--temp-output:C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\obj\Release\netcoreapp1.0\
+--out:C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\bin\Release\netcoreapp1.0\PartsUnlimitedWebsite.dll
 --define:RELEASE
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -243,74 +243,74 @@
 --reference:C:\Users\dapfe\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\dapfe\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\dapfe\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimited.Models\bin\Release\netstandard1.5\PartsUnlimited.Models.dll
---resource:"C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\obj\Release\netcoreapp1.0\PartsUnlimitedWebsitedotnet-compile.deps.json",PartsUnlimitedWebsite.deps.json
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ConfigurationExtensions.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ContentDeliveryNetworkExtensions.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\MessageServices.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Program.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Startup.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\api\ProductsController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\api\RaincheckController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\AdminConstants.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\AdminController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\CustomerController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\OrdersController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\RaincheckController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\StoreManagerController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Components\AnnouncementComponent.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Components\CartSummaryComponent.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Components\CategoryMenuComponent.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Components\ConfigurationComponent.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Components\RecommendationsComponent.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\AccountController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\CheckoutController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\HomeController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\ManageController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\OrdersController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\RecommendationsController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\SearchController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\ShoppingCartController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\StoreController.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\AccountViewModels.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\CommunityPost.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\ManageViewModels.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\OrderCostSummary.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\Request.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Models\SampleData.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\node_modules\node-gyp\lib\Find-VS2017.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\IOrdersQuery.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\IRaincheckQuery.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\OrdersQuery.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\RaincheckQuery.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\AzureMLAuthenticatedHttpClient.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\AzureMLFrequentlyBoughtTogetherRecommendationEngine.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\EmptyRecommendationEngine.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\IAzureMLAuthenticatedHttpClient.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\IRecommendationEngine.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Search\IProductSearch.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Search\StringContainsProductSearch.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\AppBuilderLoginProviderExtensions.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\AzureADLoginProviderCredentials.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ConfigurationLoginProviderCredentials.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ConfigurationLoginProviders.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\IAzureADLoginProviderCredentials.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ILoginProviderCredentials.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ILoginProviders.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Telemetry\EmptyTelemetryProvider.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\Telemetry\ITelemetryProvider.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\AlbumData.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\EditPartViewModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\HomeViewModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\OrderDetailsViewModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\OrdersModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\ShoppingCartRemoveViewModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\ShoppingCartViewModel.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ApplicationInsightsSettings.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\AzureMLFrequentlyBoughtTogetherConfig.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ConfigurationWebsiteOptions.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ContentDeliveryNetworkConfiguration.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IApplicationInsightsSettings.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IAzureMLFrequentlyBoughtTogetherConfig.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IContentDeliveryNetworkConfiguration.cs
-C:\Users\dapfe\Source\Repos\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IWebsiteOptions.cs
+--reference:C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimited.Models\bin\Release\netstandard1.5\PartsUnlimited.Models.dll
+--resource:"C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\obj\Release\netcoreapp1.0\PartsUnlimitedWebsitedotnet-compile.deps.json",PartsUnlimitedWebsite.deps.json
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ConfigurationExtensions.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ContentDeliveryNetworkExtensions.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\MessageServices.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Program.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Startup.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\api\ProductsController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\api\RaincheckController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\AdminConstants.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\AdminController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\CustomerController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\OrdersController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\RaincheckController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Areas\Admin\Controllers\StoreManagerController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Components\AnnouncementComponent.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Components\CartSummaryComponent.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Components\CategoryMenuComponent.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Components\ConfigurationComponent.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Components\RecommendationsComponent.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\AccountController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\CheckoutController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\HomeController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\ManageController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\OrdersController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\RecommendationsController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\SearchController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\ShoppingCartController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Controllers\StoreController.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\AccountViewModels.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\CommunityPost.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\ManageViewModels.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\OrderCostSummary.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\Request.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Models\SampleData.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\node_modules\node-gyp\lib\Find-VS2017.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\IOrdersQuery.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\IRaincheckQuery.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\OrdersQuery.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Queries\RaincheckQuery.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\AzureMLAuthenticatedHttpClient.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\AzureMLFrequentlyBoughtTogetherRecommendationEngine.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\EmptyRecommendationEngine.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\IAzureMLAuthenticatedHttpClient.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Recommendations\IRecommendationEngine.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Search\IProductSearch.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Search\StringContainsProductSearch.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\AppBuilderLoginProviderExtensions.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\AzureADLoginProviderCredentials.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ConfigurationLoginProviderCredentials.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ConfigurationLoginProviders.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\IAzureADLoginProviderCredentials.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ILoginProviderCredentials.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Security\ILoginProviders.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Telemetry\EmptyTelemetryProvider.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\Telemetry\ITelemetryProvider.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\AlbumData.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\EditPartViewModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\HomeViewModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\OrderDetailsViewModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\OrdersModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\ShoppingCartRemoveViewModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\ViewModels\ShoppingCartViewModel.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ApplicationInsightsSettings.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\AzureMLFrequentlyBoughtTogetherConfig.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ConfigurationWebsiteOptions.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\ContentDeliveryNetworkConfiguration.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IApplicationInsightsSettings.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IAzureMLFrequentlyBoughtTogetherConfig.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IContentDeliveryNetworkConfiguration.cs
+C:\Users\dapfe\Source\Repos\SGS - eCommerce to Dynamics Demo\PartsUnlimited\src\PartsUnlimitedWebsite\WebsiteConfiguration\IWebsiteOptions.cs
