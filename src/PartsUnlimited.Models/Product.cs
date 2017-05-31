@@ -14,6 +14,8 @@ namespace PartsUnlimited.Models
     {
         
         public Merchant Merchant { get; set; }
+        public int MerchantId { get; set; }
+        public string MerchantName { get; set; }
 
         public bool IsCertified { get; set; }
         [Required]

@@ -52,7 +52,8 @@
     "Microsoft.EntityFrameworkCore.InMemory": "1.0.1",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
-    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.1"
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.1",
+    "System.Net.Http": "4.3.2"
   },
 
   "tools": {

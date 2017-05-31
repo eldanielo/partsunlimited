@@ -52,11 +52,11 @@
                         <p class="text-content">@Model.Description</p>
                     </div>
 
-                <div class="details-table">
+                <div class="details-table"> 
                     <table class="table table-striped">
                         <tr>
                             <td>Merchant</td> 
-                            <td><a href="@Url.Action("Merchant", "Store", new {id = Model.Merchant.MerchantId})" title="@Model.Merchant.Name"></a>
+                            <td><a href="@Url.Action("Merchant", "Store", new { id = @Model.MerchantId })" title=@Model.MerchantName >@Model.MerchantName</a>
 </td>
                         </tr>
                         @foreach (var detail in Model.ProductDetailList)

@@ -14,6 +14,8 @@ namespace PartsUnlimited.Models
         {
             _connectionString = connectionString;
         }
+        public DbSet<Merchant> Merchants { get; set; }
+
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -25,6 +27,7 @@ namespace PartsUnlimited.Models
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Merchant>().HasKey(o => o.MerchantId);
             builder.Entity<Product>().Ignore(a => a.ProductDetailList).HasKey(a => a.ProductId);
             builder.Entity<Order>().HasKey(o => o.OrderId);
             builder.Entity<Category>().HasKey(g => g.CategoryId);

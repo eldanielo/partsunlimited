@@ -6,6 +6,9 @@ using Microsoft.Extensions.Caching.Memory;
 using PartsUnlimited.Models;
 using System;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace PartsUnlimited.Controllers
 {
@@ -61,6 +64,46 @@ namespace PartsUnlimited.Controllers
             }
 
             return View(productData);
+        }
+
+        static async Task<String> MakeRequest()
+        {
+            var client = new HttpClient();
+            var queryString = "test";
+
+            // Request headers
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "c050d5b005f94c0e8ec7bc74914e0b44");
+
+            var uri = "https://sgsapimgmt.azure-api.net/getMerchantCertification/manual/paths/invoke/accounts/" + queryString;
+
+             var response = await client.GetAsync(uri);
+            return await response.Content.ReadAsStringAsync();
+
+        }
+
+        public async Task<IActionResult> Merchant(int id)
+        {
+
+            var json = await MakeRequest();
+
+            dynamic resp = JsonConvert.DeserializeObject(json);
+            Merchant merchant;
+
+            
+
+            if (!_cache.TryGetValue(string.Format("merchant_{0}", id), out merchant))
+            {
+                merchant = _db.Merchants.Single(a => a.MerchantId == id);
+
+                if (merchant != null)
+                {
+                    _cache.Set(string.Format("product_{0}", id), merchant, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
+                }
+            }
+            merchant.IsCertified = resp.certifiedbysgs;
+            merchant.CertLevel = resp.merchantlevel;
+
+            return View(merchant);
         }
     }
 }

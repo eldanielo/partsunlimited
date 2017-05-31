@@ -13,6 +13,8 @@ namespace PartsUnlimited.Models
     {
         // Currently, there is no IDbSet<T> as there was in previous EF frameworks.  Hopefully, one is added (see issue: https://github.com/aspnet/EntityFramework/issues/1282).
 
+        DbSet<Merchant> Merchants { get; }
+
         DbSet<CartItem> CartItems { get; }
         DbSet<Category> Categories { get; }
         DbSet<OrderDetail> OrderDetails { get; }
