@@ -12,8 +12,10 @@ namespace PartsUnlimited.Models
 {
     public class Product
     {
-        public enum CertStatus { Certified, Uncertified, InProgress, NotChecked}
-        public CertStatus IsCertified { get; set; }
+        
+        public Merchant Merchant { get; set; }
+
+        public bool IsCertified { get; set; }
         [Required]
         [Display(Name = "Sku Number")]
         public string SkuNumber { get; set; }
@@ -92,7 +94,7 @@ namespace PartsUnlimited.Models
         {
             OrderDetails = new List<OrderDetail>();
             Created = DateTime.UtcNow;
-            IsCertified = CertStatus.NotChecked;
+            IsCertified = false;
         }
     }
 }

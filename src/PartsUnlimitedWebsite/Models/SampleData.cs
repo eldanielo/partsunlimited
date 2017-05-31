@@ -49,8 +49,13 @@ namespace PartsUnlimited.Models
             var categories = GetCategories().ToList();
             await AddOrUpdateAsync(serviceProvider, g => g.Name, categories);
 
-            var products = GetProducts(categories).ToList();
+
+            var merchants = GetMerchants().ToList();
+            await AddOrUpdateAsync(serviceProvider, a => a.Name, merchants);
+
+            var products = GetProducts(categories, merchants).ToList();
             await AddOrUpdateAsync(serviceProvider, a => a.Title, products);
+
 
             var stores = GetStores().ToList();
             await AddOrUpdateAsync(serviceProvider, a => a.Name, stores);
@@ -59,6 +64,11 @@ namespace PartsUnlimited.Models
             await AddOrUpdateAsync(serviceProvider, a => a.RaincheckId, rainchecks);
 
             PopulateOrderHistory(serviceProvider, products);
+        }
+
+        public static IEnumerable<Merchant> GetMerchants()
+        {
+            yield return new Merchant { Name = "MerchantA", Adress="Hacker way 1", CertLevel ="bronze", IsCertified =false };
         }
 
         private static async Task AddOrUpdateAsync<TEntity>(
@@ -252,12 +262,13 @@ namespace PartsUnlimited.Models
             };
         }
 
-        public static IEnumerable<Product> GetProducts(IEnumerable<Category> categories)
+        public static IEnumerable<Product> GetProducts(IEnumerable<Category> categories, IEnumerable<Merchant> merchants)
         {
             var categoriesMap = categories.ToDictionary(c => c.Name, c => c);
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "LIG-0001",
                 Title = "Halogen Headlights (2 Pack)",
                 Category = categoriesMap["Lighting"],
@@ -274,6 +285,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "LIG-0002",
                 Title = "Bugeye Headlights (2 Pack)",
                 Category = categoriesMap["Lighting"],
@@ -290,6 +302,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "LIG-0003",
                 Title = "Turn Signal Light Bulb",
                 Category = categoriesMap["Lighting"],
@@ -306,6 +319,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0001",
                 Title = "Matte Finish Rim",
                 Category = categoriesMap["Wheels & Tires"],
@@ -322,6 +336,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0002",
                 Title = "Blue Performance Alloy Rim",
                 Category = categoriesMap["Wheels & Tires"],
@@ -338,6 +353,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0003",
                 Title = "High Performance Rim",
                 Category = categoriesMap["Wheels & Tires"],
@@ -354,6 +370,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0004",
                 Title = "Wheel Tire Combo",
                 Category = categoriesMap["Wheels & Tires"],
@@ -370,6 +387,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0005",
                 Title = "Chrome Rim Tire Combo",
                 Category = categoriesMap["Wheels & Tires"],
@@ -386,6 +404,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0006",
                 Title = "Wheel Tire Combo (4 Pack)",
                 Category = categoriesMap["Wheels & Tires"],
@@ -402,6 +421,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "BRA-0001",
                 Title = "Disk and Pad Combo",
                 Category = categoriesMap["Wheels & Tires"],
@@ -418,6 +438,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "BRA-0002",
                 Title = "Brake Rotor",
                 Category = categoriesMap["Brakes"],
@@ -434,6 +455,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "BRA-0003",
                 Title = "Brake Disk and Calipers",
                 Category = categoriesMap["Brakes"],
@@ -466,6 +488,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "BAT-0002",
                 Title = "Spiral Coil Battery",
                 Category = categoriesMap["Batteries"],
@@ -482,6 +505,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "BAT-0003",
                 Title = "Jumper Leads",
                 Category = categoriesMap["Batteries"],
@@ -498,6 +522,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "OIL-0001",
                 Title = "Filter Set",
                 Category = categoriesMap["Oil"],
@@ -514,6 +539,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "OIL-0002",
                 Title = "Oil and Filter Combo",
                 Category = categoriesMap["Oil"],
@@ -530,6 +556,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                Merchant = merchants.ToList().First(),
                 SkuNumber = "OIL-0003",
                 Title = "Synthetic Engine Oil",
                 Category = categoriesMap["Oil"],

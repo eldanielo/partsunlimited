@@ -1,0 +1,63 @@
+﻿@using PartsUnlimited
+@model PartsUnlimited.Models.Merchant
+
+@{
+    ViewBag.Title = $"Merchant - {Model.Name}";
+}
+
+@section scripts
+{
+    @Html.Script("jquery-zoom")
+
+    <script type="text/javascript">
+        $(function () {
+            if ($ && $.fn.zoom) {
+                $('#product-image').zoom({ magnify : 1.5});
+            }
+        });
+    </script>
+}
+<div id="store-details">
+    <section>
+        <h2>@Model.Name</h2>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="details-panel">
+
+                <div class="zoom" id="product-image">
+                    <img src="/images/sgs-certified.png" />
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                    
+                 
+
+                <div class="details-table">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Cirtified</td> 
+                            <td>@Model.IsCertified</td>
+                        </tr>
+
+                        <tr>
+                            <td>Certifcate Level</td>
+                            <td>@Model.CertLevel</td>
+                        </tr>
+                        <tr>
+                            <td>Adress</td>
+                            <td>@Model.Adress</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+    @await Component.InvokeAsync("Recommendations", Model)
+    </section>
+</div>
