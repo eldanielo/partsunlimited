@@ -68,7 +68,7 @@ namespace PartsUnlimited.Models
 
         public static IEnumerable<Merchant> GetMerchants()
         {
-            yield return new Merchant { MerchantId = 1, Name = "MerchantA", Adress="Hacker way 1", CertLevel ="bronze", IsCertified =false };
+            yield return new Merchant { MerchantId = 1, Name = "HotWheels", Adress="Hacker way 1", CertLevel ="bronze", IsCertified =false };
         }
 
         private static async Task AddOrUpdateAsync<TEntity>(
@@ -268,7 +268,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
                 SkuNumber = "LIG-0001",
@@ -288,7 +288,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
                 SkuNumber = "LIG-0002",
@@ -308,7 +308,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
 
@@ -329,7 +329,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
 
@@ -351,7 +351,7 @@ MerchantName = "MerchantA",
             {
 
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 MerchantId = merchants.ToList().First().MerchantId,
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0002",
@@ -371,7 +371,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 MerchantId = merchants.ToList().First().MerchantId,
 
                 Merchant = merchants.ToList().First(),
@@ -392,7 +392,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 MerchantId = merchants.ToList().First().MerchantId,
 
                 Merchant = merchants.ToList().First(),
@@ -413,7 +413,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
                 MerchantId = merchants.ToList().First().MerchantId,
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
 
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0005",
@@ -433,7 +433,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "WHE-0006",
                 Title = "Wheel Tire Combo (4 Pack)",
@@ -453,7 +453,7 @@ MerchantName = "MerchantA",
             {
                 MerchantId = merchants.ToList().First().MerchantId,
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "BRA-0001",
                 Title = "Disk and Pad Combo",
@@ -472,7 +472,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 MerchantId = merchants.ToList().First().MerchantId,
 
                 Merchant = merchants.ToList().First(),
@@ -494,7 +494,7 @@ MerchantName = "MerchantA",
             {
                 MerchantId = merchants.ToList().First().MerchantId,
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "BRA-0003",
                 Title = "Brake Disk and Calipers",
@@ -515,7 +515,7 @@ MerchantName = "MerchantA",
                 MerchantId = merchants.ToList().First().MerchantId,
 
                 Merchant = merchants.ToList().First(),
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
 
                 SkuNumber = "BAT-0001",
                 Title = "12-Volt Calcium Battery",
@@ -535,7 +535,7 @@ MerchantName = "MerchantA",
             {
                 MerchantId = merchants.ToList().First().MerchantId,
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "BAT-0002",
                 Title = "Spiral Coil Battery",
@@ -554,7 +554,7 @@ MerchantName = "MerchantA",
             yield return new Product
             {
                 MerchantId = merchants.ToList().First().MerchantId,
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
 
                 Merchant = merchants.ToList().First(),
                 SkuNumber = "BAT-0003",
@@ -575,7 +575,7 @@ MerchantName = "MerchantA",
             {
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
 
                 SkuNumber = "OIL-0001",
                 Title = "Filter Set",
@@ -596,7 +596,7 @@ MerchantName = "MerchantA",
                 Merchant = merchants.ToList().First(),
                                 MerchantId = merchants.ToList().First().MerchantId,
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 SkuNumber = "OIL-0002",
                 Title = "Oil and Filter Combo",
                 Category = categoriesMap["Oil"],
@@ -616,7 +616,7 @@ MerchantName = "MerchantA",
                 Merchant = merchants.ToList().First(),
                 MerchantId = merchants.ToList().First().MerchantId,
 
-MerchantName = "MerchantA",
+MerchantName = merchants.ToList().First().Name,
                 SkuNumber = "OIL-0003",
                 Title = "Synthetic Engine Oil",
                 Category = categoriesMap["Oil"],
