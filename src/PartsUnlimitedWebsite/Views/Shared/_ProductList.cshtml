@@ -18,9 +18,9 @@ else
                         <div class="product-image-container hover-over hidden-xs">
                             <div class="image">
                                 <img style="position:relative" src="/images/@product.ProductArtUrl" alt="@product.Title"/>
-
+                                @if (product.IsCertified) {
                                 <img style="position:absolute;height:50px;width:50px; bottom:80px; "  src="/images/sgs-certified.png" />
-                           
+                                }
                                  </div>
                             <div class="detail">
                                 <h4>@product.Title @product.MerchantName</h4>
@@ -31,9 +31,12 @@ else
                             </div>
                             <div class="mouse-over hidden-xs">
                                 <div class="image-second">
+                                
                                     <img src="/images/@product.ProductArtUrl" alt="@product.Title zoom"/>
+                                     @if (product.IsCertified)
+                                     {
                                     <img style="position:absolute;height:50px;width:50px; bottom:80px; " src="/images/sgs-certified.png" />
-
+                                     }
                                 </div>
 
                                 <div class="shop-now">

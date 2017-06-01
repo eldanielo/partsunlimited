@@ -26,8 +26,9 @@
 
                 <div class="zoom" id="product-image">
                         @Html.Image(@Model.ProductArtUrl)
+                    @if (Model.IsCertified) {
                     <img style="position:absolute;height:75px;width:75px; bottom:0px; " src="/images/sgs-certified.png" />
-
+                    }
                     </div>
 
                 </div>

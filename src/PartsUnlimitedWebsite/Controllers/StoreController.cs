@@ -36,7 +36,7 @@ namespace PartsUnlimited.Controllers
         //
         // GET: /Store/Browse?category=Brakes
 
-        public IActionResult Browse(int categoryId)
+        public async Task<IActionResult> Browse(int categoryId)
         {
             //@TODO Products
             // Retrieve Category category and its Associated associated Products products from database
@@ -45,8 +45,35 @@ namespace PartsUnlimited.Controllers
             var categoryModel = _db.Categories.Single(g => g.CategoryId == categoryId);
             categoryModel.Products = _db.Products.Where(a => a.CategoryId == categoryModel.CategoryId).ToList();
 
+            foreach (Product p in categoryModel.Products) {
+                p.IsCertified = await MakeProductRequest(p.Title);
+            }
+
             return View(categoryModel);
         }
+        static async Task<bool> MakeProductRequest(string queryString)
+        {
+            var client = new HttpClient();
+            
+
+            // Request headers
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "d6ccd6589e1540d98b5b7423e46eedf9");
+
+            var uri = "https://sgsapimgmt.azure-api.net/getProductCertification/manual/paths/invoke/products/" + queryString;
+
+            var response = await client.GetAsync(uri);
+
+            dynamic json = JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync());
+            if (json.certifiedbysgs == null)
+            {
+                return false;
+
+            }
+            return json.certifiedbysgs;
+
+
+        }
+
 
         public async Task<IActionResult> Details(int id)
         {
@@ -74,7 +101,7 @@ namespace PartsUnlimited.Controllers
             var queryString = "test";
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "c050d5b005f94c0e8ec7bc74914e0b44");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "d6ccd6589e1540d98b5b7423e46eedf9");
 
             var uri = "https://sgsapimgmt.azure-api.net/getMerchantCertification/manual/paths/invoke/accounts/" + queryString;
 
@@ -102,9 +129,20 @@ namespace PartsUnlimited.Controllers
                     _cache.Set(string.Format("product_{0}", id), merchant, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
                 }
             }
+
+            if(resp.certifiedbysgs ==null ||resp.merchantlevel == null) { 
+            if (resp.certifiedbysgs == null) {
+                merchant.IsCertified = false;
+            }
+            if (resp.certifiedbysgs == null)
+            {
+                merchant.IsCertified = false;
+            }
+            }
+            else { 
             merchant.IsCertified = resp.certifiedbysgs;
             merchant.CertLevel = resp.merchantlevel;
-
+            }
             return View(merchant);
         }
     }
