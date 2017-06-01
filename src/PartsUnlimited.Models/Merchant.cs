@@ -12,6 +12,6 @@ namespace PartsUnlimited.Models
         public bool IsCertified { get; set; }
         public string Adress { get; set; }
         public string CertLevel { get; set; }
-        
+        public string Homepage { get; set; }
     }
 }

@@ -48,7 +48,7 @@ namespace PartsUnlimited.Controllers
             return View(categoryModel);
         }
 
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
             Product productData;
 
@@ -62,6 +62,8 @@ namespace PartsUnlimited.Controllers
                     _cache.Set(string.Format("product_{0}", id), productData, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
                 }                
             }
+
+
 
             return View(productData);
         }

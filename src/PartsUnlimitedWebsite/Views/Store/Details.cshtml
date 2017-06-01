@@ -57,7 +57,8 @@
                         <tr>
                             <td>Merchant</td> 
                             <td><a href="@Url.Action("Merchant", "Store", new { id = @Model.MerchantId })" title=@Model.MerchantName >@Model.MerchantName</a>
-</td>
+                            
+                            </td>
                         </tr>
                         @foreach (var detail in Model.ProductDetailList)
                         {
