@@ -69,7 +69,7 @@ namespace PartsUnlimited.Models
         public static IEnumerable<Merchant> GetMerchants()
         {
             yield return new Merchant { MerchantId = 1, Name = "HotWheels", Adress="Hacker way 1", CertLevel ="bronze", IsCertified =false, Homepage= "http://play.hotwheels.com/en-gb/index.html" };
-            yield return new Merchant { MerchantId = 2, Name = "Hangzhou Zhongce Rubber Company", Adress = "Hacker way 1", CertLevel = "bronze", IsCertified = false, Homepage= "http://www.hzygxj.com/doce/gsjj.htm" };
+            yield return new Merchant { MerchantId = 2, Name = "Hangzhou Zhongce Rubber Company", Adress = "Rue de la Dixence 83\n1950 Sion\nSwitzerland", CertLevel = "bronze", IsCertified = false, Homepage= "http://www.hzygxj.com/doce/gsjj.htm" };
 
             }
 
@@ -270,9 +270,9 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
                 SkuNumber = "LIG-0001",
                 Title = "Halogen Headlights (2 Pack)",
                 Category = categoriesMap["Lighting"],
@@ -290,9 +290,9 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
                 SkuNumber = "LIG-0002",
                 Title = "Bugeye Headlights (2 Pack)",
                 Category = categoriesMap["Lighting"],
@@ -310,9 +310,9 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
 
                 SkuNumber = "LIG-0003",
                 Title = "Turn Signal Light Bulb",
@@ -331,9 +331,9 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
 
                 SkuNumber = "WHE-0001",
                 Title = "Matte Finish Rim",
@@ -353,9 +353,9 @@ MerchantName = merchants.ToList()[0].Name,
             {
 
 
-MerchantName = merchants.ToList()[0].Name,
-                MerchantId = merchants.ToList()[0].MerchantId,
-                Merchant = merchants.ToList()[0],
+MerchantName = merchants.ToList()[1].Name,
+                MerchantId = merchants.ToList()[1].MerchantId,
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0002",
                 Title = "Blue Performance Alloy Rim",
                 Category = categoriesMap["Wheels & Tires"],
@@ -373,10 +373,10 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-                Merchant = merchants.ToList()[0],
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0003",
                 Title = "High Performance Rim",
                 Category = categoriesMap["Wheels & Tires"],
@@ -394,10 +394,10 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-                Merchant = merchants.ToList()[0],
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0004",
                 Title = "Wheel Tire Combo",
                 Category = categoriesMap["Wheels & Tires"],
@@ -435,8 +435,8 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0006",
                 Title = "Wheel Tire Combo (4 Pack)",
                 Category = categoriesMap["Wheels & Tires"],
@@ -453,10 +453,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                MerchantId = merchants.ToList()[0].MerchantId,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "BRA-0001",
                 Title = "Disk and Pad Combo",
                 Category = categoriesMap["Wheels & Tires"],
@@ -474,10 +474,10 @@ MerchantName = merchants.ToList()[0].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[0].Name,
-                MerchantId = merchants.ToList()[0].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-                Merchant = merchants.ToList()[0],
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "BRA-0002",
                 Title = "Brake Rotor",
                 Category = categoriesMap["Brakes"],
@@ -494,10 +494,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                MerchantId = merchants.ToList()[0].MerchantId,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "BRA-0003",
                 Title = "Brake Disk and Calipers",
                 Category = categoriesMap["Brakes"],
@@ -514,10 +514,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                MerchantId = merchants.ToList()[0].MerchantId,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-                Merchant = merchants.ToList()[0],
-MerchantName = merchants.ToList()[0].Name,
+                Merchant = merchants.ToList()[1],
+MerchantName = merchants.ToList()[1].Name,
 
                 SkuNumber = "BAT-0001",
                 Title = "12-Volt Calcium Battery",
@@ -535,10 +535,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                MerchantId = merchants.ToList()[0].MerchantId,
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[0].Name,
-                Merchant = merchants.ToList()[0],
+MerchantName = merchants.ToList()[1].Name,
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "BAT-0002",
                 Title = "Spiral Coil Battery",
                 Category = categoriesMap["Batteries"],
@@ -555,10 +555,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                MerchantId = merchants.ToList()[0].MerchantId,
-MerchantName = merchants.ToList()[0].Name,
+                MerchantId = merchants.ToList()[1].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
 
-                Merchant = merchants.ToList()[0],
+                Merchant = merchants.ToList()[1],
                 SkuNumber = "BAT-0003",
                 Title = "Jumper Leads",
                 Category = categoriesMap["Batteries"],
@@ -575,9 +575,9 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
-MerchantName = merchants.ToList()[0].Name,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
+MerchantName = merchants.ToList()[1].Name,
 
                 SkuNumber = "OIL-0001",
                 Title = "Filter Set",
@@ -595,10 +595,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                Merchant = merchants.ToList()[0],
-                                MerchantId = merchants.ToList()[0].MerchantId,
+                Merchant = merchants.ToList()[1],
+                                MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[0].Name,
+MerchantName = merchants.ToList()[1].Name,
                 SkuNumber = "OIL-0002",
                 Title = "Oil and Filter Combo",
                 Category = categoriesMap["Oil"],
@@ -615,10 +615,10 @@ MerchantName = merchants.ToList()[0].Name,
 
             yield return new Product
             {
-                Merchant = merchants.ToList()[0],
-                MerchantId = merchants.ToList()[0].MerchantId,
+                Merchant = merchants.ToList()[1],
+                MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[0].Name,
+MerchantName = merchants.ToList()[1].Name,
                 SkuNumber = "OIL-0003",
                 Title = "Synthetic Engine Oil",
                 Category = categoriesMap["Oil"],

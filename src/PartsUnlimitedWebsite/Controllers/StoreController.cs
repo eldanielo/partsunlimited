@@ -85,6 +85,8 @@ namespace PartsUnlimited.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
+
+
             Product productData;
 
             if (!_cache.TryGetValue(string.Format("product_{0}", id), out productData))
@@ -100,33 +102,51 @@ namespace PartsUnlimited.Controllers
             productData.IsCertified = await MakeProductRequest(productData.Title);
 
 
+            Merchant merchant;
+
+            if (!_cache.TryGetValue(string.Format("merchant_{0}", productData.MerchantId), out merchant))
+            {
+                merchant = _db.Merchants.Single(a => a.MerchantId == productData.MerchantId);
+
+                if (merchant != null)
+                {
+                    _cache.Set(string.Format("product_{0}", productData.MerchantId), merchant, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
+                }
+            }
+
+
+            var response = await MakeMerchantRequest(merchant.Name);
+            merchant.CertLevel = response.Item2;
+            merchant.IsCertified = response.Item1;
+
             return View(productData);
         }
 
-        static async Task<String> MakeRequest()
+         public async Task<Tuple<bool, String>> MakeMerchantRequest(string queryString)
         {
             var client = new HttpClient();
-            var queryString = "test";
+
 
             // Request headers
             client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "d6ccd6589e1540d98b5b7423e46eedf9");
 
             var uri = "https://sgsapimgmt.azure-api.net/getMerchantCertification/manual/paths/invoke/accounts/" + queryString;
 
-             var response = await client.GetAsync(uri);
-            return await response.Content.ReadAsStringAsync();
+
+
+            var response = await client.GetAsync(uri);
+            
+            dynamic json = JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync());
+
+            
+           
+            return new Tuple<bool, String>(Convert.ToBoolean(json.certifiedbysgs.ToString().Replace("null", "false")), json.merchantlevel.ToString().Replace("null",""));
 
         }
 
         public async Task<IActionResult> Merchant(int id)
         {
-
-            var json = await MakeRequest();
-
-            dynamic resp = JsonConvert.DeserializeObject(json);
             Merchant merchant;
-
-            
 
             if (!_cache.TryGetValue(string.Format("merchant_{0}", id), out merchant))
             {
@@ -137,20 +157,9 @@ namespace PartsUnlimited.Controllers
                     _cache.Set(string.Format("product_{0}", id), merchant, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
                 }
             }
-
-            if(resp.certifiedbysgs ==null ||resp.merchantlevel == null) { 
-            if (resp.certifiedbysgs == null) {
-                merchant.IsCertified = false;
-            }
-            if (resp.certifiedbysgs == null)
-            {
-                merchant.IsCertified = false;
-            }
-            }
-            else { 
-            merchant.IsCertified = resp.certifiedbysgs;
-            merchant.CertLevel = resp.merchantlevel;
-            }
+            var response = await MakeMerchantRequest(merchant.Name);
+            merchant.CertLevel = response.Item2;
+            merchant.IsCertified = response.Item1;
             return View(merchant);
         }
     }

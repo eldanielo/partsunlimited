@@ -57,8 +57,12 @@
                     <table class="table table-striped">
                         <tr>
                             <td>Merchant</td> 
-                            <td><a href="@Url.Action("Merchant", "Store", new { id = @Model.MerchantId })" title=@Model.MerchantName >@Model.MerchantName</a>
                             
+                            <td><a href="@Url.Action("Merchant", "Store", new { id = @Model.MerchantId })" title=@Model.MerchantName >@Model.MerchantName</a>
+                                @if (Model.Merchant.IsCertified)
+                                {
+                                    <img style="height:25px;width:2-5px; bottom:0px; " src="/images/sgs-certified.png" />
+                                }
                             </td>
                         </tr>
                         @foreach (var detail in Model.ProductDetailList)
