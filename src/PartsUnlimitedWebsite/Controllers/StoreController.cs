@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace PartsUnlimited.Controllers
 {
@@ -43,14 +44,19 @@ namespace PartsUnlimited.Controllers
 
             // TODO [EF] Swap to native support for loading related data when available
             var categoryModel = _db.Categories.Single(g => g.CategoryId == categoryId);
-            categoryModel.Products = _db.Products.Where(a => a.CategoryId == categoryModel.CategoryId).ToList();
+            var ProductList = _db.Products.Where(a => a.CategoryId == categoryModel.CategoryId).ToList();
 
-            foreach (Product p in categoryModel.Products) {
-                p.IsCertified = await MakeProductRequest(p.Title);
+
+            var tasks = ProductList.Select(i => MakeProductRequest(i.Title));
+            var results = await Task.WhenAll(tasks);
+            for (int i = 0; i < ProductList.Count; i++) {
+                ProductList[i].IsCertified = results[i];
             }
-
             return View(categoryModel);
         }
+
+
+
         static async Task<bool> MakeProductRequest(string queryString)
         {
             var client = new HttpClient();
@@ -75,6 +81,8 @@ namespace PartsUnlimited.Controllers
         }
 
 
+
+
         public async Task<IActionResult> Details(int id)
         {
             Product productData;
@@ -89,7 +97,7 @@ namespace PartsUnlimited.Controllers
                     _cache.Set(string.Format("product_{0}", id), productData, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
                 }                
             }
-
+            productData.IsCertified = await MakeProductRequest(productData.Title);
 
 
             return View(productData);
