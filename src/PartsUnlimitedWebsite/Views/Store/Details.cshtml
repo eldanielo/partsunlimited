@@ -55,7 +55,23 @@
 
                 <div class="details-table"> 
                     <table class="table table-striped">
-                        <tr>
+                       <tr>
+                           <td>Certified by SGS</td>
+                           <td>@Model.IsCertified</td>
+
+                       </tr>
+                        @if (Model.IsCertified && Model.TestScore != "") { 
+                            <tr>
+                                <td>Reliability</td>
+                                <td>@Model.TestScore</td>
+
+                            </tr>
+
+                        }
+
+                         <tr>
+                            
+
                             <td>Merchant</td> 
                             
                             <td><a href="@Url.Action("Merchant", "Store", new { id = @Model.MerchantId })" title=@Model.MerchantName >@Model.MerchantName</a>

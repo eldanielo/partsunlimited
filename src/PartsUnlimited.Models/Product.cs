@@ -12,6 +12,7 @@ namespace PartsUnlimited.Models
 {
     public class Product
     {
+        public String TestScore { get; set; }
         
         public Merchant Merchant { get; set; }
         public int MerchantId { get; set; }

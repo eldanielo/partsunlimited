@@ -270,6 +270,7 @@ namespace PartsUnlimited.Models
 
             yield return new Product
             {
+                TestScore = "",
 MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                 MerchantId = merchants.ToList()[1].MerchantId,
@@ -290,7 +291,9 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+
+                MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                 MerchantId = merchants.ToList()[1].MerchantId,
                 SkuNumber = "LIG-0002",
@@ -331,7 +334,9 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                 MerchantId = merchants.ToList()[1].MerchantId,
 
@@ -352,8 +357,9 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
+                TestScore = "",
 
-MerchantName = merchants.ToList()[1].Name,
+                MerchantName = merchants.ToList()[1].Name,
                 MerchantId = merchants.ToList()[1].MerchantId,
                 Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0002",
@@ -373,7 +379,8 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 MerchantId = merchants.ToList()[1].MerchantId,
 
                 Merchant = merchants.ToList()[1],
@@ -394,7 +401,8 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 MerchantId = merchants.ToList()[1].MerchantId,
 
                 Merchant = merchants.ToList()[1],
@@ -435,7 +443,8 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                 SkuNumber = "WHE-0006",
                 Title = "Wheel Tire Combo (4 Pack)",
@@ -474,7 +483,8 @@ MerchantName = merchants.ToList()[1].Name,
             yield return new Product
             {
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 MerchantId = merchants.ToList()[1].MerchantId,
 
                 Merchant = merchants.ToList()[1],
@@ -516,6 +526,7 @@ MerchantName = merchants.ToList()[1].Name,
             {
                 MerchantId = merchants.ToList()[1].MerchantId,
 
+                TestScore = "",
                 Merchant = merchants.ToList()[1],
 MerchantName = merchants.ToList()[1].Name,
 
@@ -558,6 +569,7 @@ MerchantName = merchants.ToList()[1].Name,
                 MerchantId = merchants.ToList()[1].MerchantId,
 MerchantName = merchants.ToList()[1].Name,
 
+                TestScore = "",
                 Merchant = merchants.ToList()[1],
                 SkuNumber = "BAT-0003",
                 Title = "Jumper Leads",
@@ -575,6 +587,8 @@ MerchantName = merchants.ToList()[1].Name,
 
             yield return new Product
             {
+
+                TestScore = "",
                 Merchant = merchants.ToList()[1],
                 MerchantId = merchants.ToList()[1].MerchantId,
 MerchantName = merchants.ToList()[1].Name,
@@ -598,7 +612,8 @@ MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                                 MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 SkuNumber = "OIL-0002",
                 Title = "Oil and Filter Combo",
                 Category = categoriesMap["Oil"],
@@ -618,7 +633,8 @@ MerchantName = merchants.ToList()[1].Name,
                 Merchant = merchants.ToList()[1],
                 MerchantId = merchants.ToList()[1].MerchantId,
 
-MerchantName = merchants.ToList()[1].Name,
+                TestScore = "",
+                MerchantName = merchants.ToList()[1].Name,
                 SkuNumber = "OIL-0003",
                 Title = "Synthetic Engine Oil",
                 Category = categoriesMap["Oil"],

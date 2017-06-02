@@ -50,14 +50,16 @@ namespace PartsUnlimited.Controllers
             var tasks = ProductList.Select(i => MakeProductRequest(i.Title));
             var results = await Task.WhenAll(tasks);
             for (int i = 0; i < ProductList.Count; i++) {
-                ProductList[i].IsCertified = results[i];
+                ProductList[i].IsCertified = results[i].Item1;
+
+                ProductList[i].TestScore = results[i].Item2;
             }
             return View(categoryModel);
         }
 
 
 
-        static async Task<bool> MakeProductRequest(string queryString)
+        static async Task<Tuple<bool, String>> MakeProductRequest(string queryString)
         {
             var client = new HttpClient();
             
@@ -70,12 +72,8 @@ namespace PartsUnlimited.Controllers
             var response = await client.GetAsync(uri);
 
             dynamic json = JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync());
-            if (json.certifiedbysgs == null)
-            {
-                return false;
 
-            }
-            return json.certifiedbysgs;
+           return new Tuple<bool, String>(Convert.ToBoolean(json.certifiedbysgs.ToString().Replace("null", "false")), json.testscore.ToString().Replace("null", ""));
 
 
         }
@@ -99,7 +97,7 @@ namespace PartsUnlimited.Controllers
                     _cache.Set(string.Format("product_{0}", id), productData, new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(10)));
                 }                
             }
-            productData.IsCertified = await MakeProductRequest(productData.Title);
+            Task<Tuple<bool,String>> porductCertified =  MakeProductRequest(productData.Title);
 
 
             Merchant merchant;
@@ -115,9 +113,17 @@ namespace PartsUnlimited.Controllers
             }
 
 
-            var response = await MakeMerchantRequest(merchant.Name);
-            merchant.CertLevel = response.Item2;
-            merchant.IsCertified = response.Item1;
+            Task<Tuple<bool, String>> merchantCertified =  MakeMerchantRequest(merchant.Name);
+
+            string testscore = (await porductCertified).Item2;
+            if (testscore != "") { 
+                productData.TestScore = (Double.Parse(testscore) * 100).ToString() + "%"; ;
+
+            }
+
+            productData.IsCertified = (await porductCertified).Item1;
+            merchant.CertLevel = (await merchantCertified).Item2;
+            merchant.IsCertified = (await merchantCertified).Item1;
 
             return View(productData);
         }
